@@ -1,85 +1,101 @@
-# 🧠 Projeto Python IA — Previsão de Score de Crédito
+🧠 Projeto Python IA — Previsão de Score de Crédito
+🧠 Contexto do Projeto
 
-## 📌 Contexto do Projeto
-Neste projeto, simula-se um **case real do setor bancário**, onde o objetivo é criar um modelo de **Inteligência Artificial** capaz de prever o **score de crédito de clientes**, classificando-os como:
+Este projeto simula um case do setor bancário, onde o objetivo é prever o score de crédito de clientes, classificando-os como:
 
-- ❌ Ruim  
-- ⚠️ Ok  
-- ✅ Bom  
+❌ Ruim
 
-O modelo é treinado a partir de dados históricos de clientes e, posteriormente, utilizado para prever o score de **novos clientes**.
+⚠️ Ok
 
----
+✅ Bom
 
-## 🎯 Objetivo
-Analisar os dados dos clientes de um banco e desenvolver um modelo de Machine Learning que consiga:
-- Aprender padrões de comportamento financeiro
-- Classificar automaticamente o score de crédito
-- Comparar diferentes algoritmos de classificação
+A solução utiliza Machine Learning supervisionado, treinando modelos a partir de dados históricos.
 
----
+Projeto baseado em estudo educacional da Hashtag Treinamentos.
 
-## 🛠️ Tecnologias Utilizadas
-- **Python**
-- **Pandas** — manipulação e análise de dados
-- **Scikit-learn** — construção e avaliação de modelos de Machine Learning
-- **LabelEncoder** — codificação de variáveis categóricas
+🎯 Objetivo
 
----
+Analisar dados financeiros de clientes
 
-## 📊 Base de Dados
-O projeto utiliza dois arquivos principais:
-- `clientes.csv` → base histórica para treino e teste do modelo
-- `novos_clientes.csv` → base utilizada para previsões
+Criar modelos de classificação
 
-Os dados incluem informações como:
-- Profissão
-- Mix de crédito
-- Comportamento de pagamento
-- Score de crédito (variável alvo)
+Comparar algoritmos de Machine Learning
 
-Arquivos utilizados no estudo disponibilizados pela :contentReference[oaicite:0]{index=0}.
+Prever score de novos clientes
 
----
+🚀 Funcionalidades
 
-## 🔄 Etapas do Projeto
+Tratamento de dados categóricos
 
-### 1️⃣ Leitura e Análise dos Dados
-- Importação dos dados com Pandas
-- Análise da estrutura e tipos das colunas
+Divisão em treino e teste
 
-### 2️⃣ Tratamento de Dados
-- Conversão de variáveis categóricas em valores numéricos usando `LabelEncoder`
-- Separação entre variáveis independentes (`X`) e variável alvo (`y`)
+Treinamento de múltiplos modelos
 
-### 3️⃣ Divisão da Base
-- Separação em dados de treino e teste
-- Proporção: 70% treino e 30% teste
+Avaliação por acurácia
 
-### 4️⃣ Criação dos Modelos
-Foram testados dois algoritmos de classificação:
-- 🌳 **Random Forest Classifier**
-- 📍 **K-Nearest Neighbors (KNN)**
+Previsão de novos clientes
 
-### 5️⃣ Avaliação dos Modelos
-- Métrica utilizada: **Acurácia (Accuracy Score)**
-- Comparação do desempenho entre os modelos
+🛠️ Tecnologias Utilizadas
 
-### 6️⃣ Previsão de Novos Clientes
-- Aplicação do modelo treinado para classificar novos clientes
-- Uso do mesmo padrão de codificação das variáveis
+Python
 
----
+Pandas
 
-## 📈 Resultados
-Após o treinamento e teste dos modelos:
-- O **Random Forest** apresentou melhor desempenho em relação ao KNN
-- O modelo escolhido foi utilizado para realizar previsões em novos clientes
+Scikit-learn
 
----
+📂 Estrutura do Projeto
+previsao-score-credito/
+│
+├── clientes.csv
+├── novos_clientes.csv
+├── main.py
+└── README.md
 
-## ▶️ Como Executar o Projeto
+🔄 Etapas do Projeto
 
-### 1️⃣ Clone o repositório
-```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+Análise e limpeza dos dados
+
+Codificação de variáveis categóricas
+
+Separação entre variáveis e alvo
+
+Treinamento dos modelos:
+
+Random Forest
+
+KNN
+
+Avaliação por acurácia
+
+Previsão de novos clientes
+
+📈 Resultados
+
+O modelo Random Forest apresentou melhor desempenho
+
+Modelo aplicado com sucesso em novos dados
+
+▶️ Como Executar
+pip install pandas scikit-learn
+python main.py
+📚 Aprendizados
+
+Machine Learning supervisionado
+
+Pré-processamento de dados
+
+Comparação de modelos
+
+Aplicação prática de IA
+
+🔮 Próximas Melhorias
+
+Ajuste de hiperparâmetros
+
+Novas métricas (precision, recall, F1)
+
+Salvamento do modelo treinado
+
+⚠️ Observação
+
+Projeto desenvolvido com finalidade educacional.
